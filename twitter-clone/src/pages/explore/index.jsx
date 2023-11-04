@@ -1,6 +1,6 @@
 export default function Explore(){
 return (
-    <div >
+    <div w-600>
         explore component
     </div>
 )
