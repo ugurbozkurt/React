@@ -3,13 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply bg-black text-white;
+    @apply bg-black text-white font-sans;
 
 } 
 
-/* Path: twitter-clone/src/App.js
-
-genislik 1265px
-Sol Side bar 275px genislik 
-Sag Side Bar 350px genislik content auto
-*/
