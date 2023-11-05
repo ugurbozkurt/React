@@ -9,7 +9,6 @@ import Bookmarks from '../pages/bookmarks';
 import Communities from '../pages/communities';
 import Premium from '../pages/premium';
 import Profile from '../pages/profile';
-import More from '../pages/more';
 
 import MainLayout from '../layouts/main';
 import NotFound from '../pages/not-found';
@@ -59,11 +58,6 @@ const routes = createBrowserRouter([
             {
                 path : 'profile',
                 element : <Profile></Profile>   
-            }
-            ,
-            {
-                path : 'more',
-                element : <More></More>
             }
         ]
     },

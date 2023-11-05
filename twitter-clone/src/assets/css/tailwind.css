@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    font-family : TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
 body{
-    @apply bg-black text-white font-sans;
+    @apply bg-black text-white;
 
 } 
 
