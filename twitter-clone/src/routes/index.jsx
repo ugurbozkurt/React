@@ -12,6 +12,7 @@ import Profile from '../pages/profile';
 
 import MainLayout from '../layouts/main';
 import NotFound from '../pages/not-found';
+
 const routes = createBrowserRouter([
     {
         path : '/',
@@ -56,7 +57,7 @@ const routes = createBrowserRouter([
             }
             ,
             {
-                path : 'profile',
+                path : ':slug',
                 element : <Profile></Profile>   
             }
         ]

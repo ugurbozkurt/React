@@ -4,13 +4,12 @@ import {RouterProvider} from 'react-router-dom'
 import routes from './routes'
 import './assets/css/tailwind.css'
 
-import {Provider} from "react-redux"
-import store from "../src/store" 
+import { Provider } from "react-redux";
+import store from "../src/store";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   
   <Provider store={store}>
-    <RouterProvider router={routes} />
-  </Provider>
-
+		<RouterProvider router={routes} />
+	</Provider>
 )
