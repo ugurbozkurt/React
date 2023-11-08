@@ -5,8 +5,27 @@ const initialState = {
 		id: 1,
 		username: 'ugurbozkurt.gg',
 		fullName: 'Uğur',
-		avatar: 'https://pbs.twimg.com/profile_images/1703048675239337984/6ay2racU_normal.jpg'
-	}
+		avatar: 'https://pbs.twimg.com/profile_images/1703048675239337984/6ay2racU_normal.jpg',
+		isLocked: true	
+	},
+	accounts :[
+		{
+			id: 1,
+			username: 'ugurbozkurt.gg',
+			fullName: 'Uğur',
+			avatar: 'https://pbs.twimg.com/profile_images/1703048675239337984/6ay2racU_normal.jpg',
+			isLocked: true,
+			notification : 0	
+		},
+		{
+			id: 2,
+			username: 'kallaxgerton',
+			fullName: 'Kallax Gerton',
+			avatar: 'https://pbs.twimg.com/profile_images/1589060489530818562/jhNYvoC7_normal.jpg',
+			isLocked: true,
+			notification : 15	
+		}
+	]
 }
 
 const auth = createSlice({
