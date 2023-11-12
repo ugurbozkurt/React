@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 html{
-    font-family : TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Twitter Chirp' ,BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;;
+    src: url('subset-TwitterChirp.woff2') format('woff2'),
+        url('subset-TwitterChirp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
 }
 
-
 body{
-    @apply bg-black text-white text-[15px] antialiased;
+    @apply bg-black text-white text-[15px];
 
 } 
 

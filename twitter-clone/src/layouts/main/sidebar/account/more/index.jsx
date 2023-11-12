@@ -6,7 +6,9 @@ export default function More({close}){
     const currentAccount = useAccount()
     const accounts = useAccounts()
     return(
-        accounts.map((item,index)=>
+       <>
+        {accounts.map((item,index)=>
+        
         <button 
         type="button"
         disabled={item.username === currentAccount.username}
@@ -15,6 +17,7 @@ export default function More({close}){
             setCurrentAccount(item)
             close()
             }
+           
         }
         key={index} 
         className={classNames("h-[66px]  px-4 py-2 flex items-center w-full transition-colors text-left outline-none "
@@ -45,13 +48,25 @@ export default function More({close}){
                     </svg>
    
             )}
-            {item.notification >0 &&(
+            {item.notification >0 && item.username !== currentAccount.username  &&(
                     <span className="px-1.5 text-[13px] bg-[#1d9bf0] rounded-full font-bold flex justify-center items-center absolute right-5">
                         {item.notification}
                     </span>
             )}
-         
+
         </button>
-    )
+        
+    )}
+     <div className="w-[100%] h-px bg-[#2f3336] mb-3 mt-3 mx-auto"/> 
+    <button className="h-[44px] w-full flex items-center transition-colors justify-between px-4 font-bold hover:bg-[#EFF3F41A]">
+        Add an existing account
+    </button>
+    <button className="h-[44px] w-full flex items-center transition-colors justify-between px-4 font-bold hover:bg-[#EFF3F41A]">
+        Manage accounts
+    </button>
+    <button className="h-[44px] w-full flex items-center transition-colors justify-between px-4 font-bold hover:bg-[#EFF3F41A]">
+        Log out @{currentAccount.username}
+    </button>
+   </>
     )
 }

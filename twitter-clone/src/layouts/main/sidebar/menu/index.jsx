@@ -3,11 +3,16 @@ import classNames from "classnames"
 import Button from "../../../../components/button"
 import {MainMenu} from '../../../../utils/const';
 import More from './more';
+import {useAccount} from "../../../../store/auth/hooks";
+
 export default function Menu(){
-    return(
-        <nav className="mt-0.5 mb-1">
+
+   const account = useAccount();
+   
+    return (
+        <nav className="mt-0.5 mb-1" key={account}>
             {MainMenu.map((item,index)=>
-                        <NavLink to={item.path} key={index} className="py-[3px] block group">
+                        <NavLink to={typeof item.path === 'function' ? item.path() : item.path} key={index} className="py-[3px] block group">
                         {({isActive})=>(
                             <div className={classNames("p-3 rounded-full inline-flex items-center transition-colors gap-5 text-xl group-hover:bg-[#EFF3F41A]",
                             {

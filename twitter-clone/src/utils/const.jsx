@@ -1,6 +1,6 @@
 
 import store from "../store";
-import auth from "../store/auth";
+
 export const MainMenu =[
     {
         path : "/",
@@ -127,7 +127,9 @@ export const MainMenu =[
         }
     },
     {
-        path : `${store.getState()?.auth?.currentAccount?.username}`,
+        path: () => {
+            return `/${store.getState()?.auth?.currentAccount?.username}`
+        },
         title : 'Profile',
         icons : 
         {
