@@ -3,7 +3,7 @@ import {createSlice} from "@reduxjs/toolkit";
 const initialState = {
 	currentAccount: {
 		id: 1,
-		username: 'ugurbozkurt.gg',
+		username: 'ugurbozkurt_gg',
 		fullName: 'Uğur',
 		avatar: 'https://pbs.twimg.com/profile_images/1703048675239337984/6ay2racU_normal.jpg',
 		isLocked: true	

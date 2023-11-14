@@ -1,7 +1,7 @@
 
 import store from "../store";
 
-export const MainMenu =[
+export const MainMenu = [
     {
         path : "/",
         title : "Home",
@@ -145,7 +145,179 @@ export const MainMenu =[
     }
 ]
 
-export const MoreMenu =[
+export const TrendTopicsList = [
+    {
+
+        title : "Trending in Turkey",
+        topic : {
+            type : 'tag',
+            value : 'A101eCiddiBoykotZamanı',
+        },
+        postCount : 13663
+    }
+    ,
+    {
+
+        title : "Entertainment · Trending",
+        topic : {
+            type : 'tag',
+            value : 'Morty',
+        },
+        postCount : 65342
+    }
+    ,
+    {
+
+        title : "Trending in Turkey",
+        topic : {
+            type : 'tag',
+            value : 'aysenurparlak',
+        },
+        postCount : 866554
+    }
+    ,
+    {
+
+        title : "Trending in Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Sevan Nişanyan',
+        },
+        postCount : 663444  
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Faker',
+        },
+        postCount : 12345
+    }
+    ,
+    {
+
+        title : "Trending",
+        topic : {
+            type : 'tag',
+            value : 'Mika',
+        },
+        postCount : 46533
+    }
+    ,
+    {
+
+        title : "Politics · Trending",
+        topic : {
+            type : 'tag',
+            value : 'ErdoğanAffı BeyazSayfa',
+        },
+        postCount : 154433
+    }
+    ,
+    {
+
+        title : "Trending in Turkey",
+        topic : {
+            type : 'tag',
+            value : 'dilanpolat',
+        },
+        postCount : 122222
+    }
+    ,
+    {
+
+        title : "Politics · Trending",
+        topic : {
+            type : 'tag',
+            value : 'Fascist',
+        },
+        postCount : 1533
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Hi-Fi Rush',
+        },
+        postCount : 916555  
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Hi-Fi Rush',
+        },
+        postCount : 916555  
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Hi-Fi Rush',
+        },
+        postCount : 916555  
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Hi-Fi Rush',
+        },
+        postCount : 916555  
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Hi-Fi Rush',
+        },
+        postCount : 916555  
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Hi-Fi Rush',
+        },
+        postCount : 916555  
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Hi-Fi Rush',
+        },
+        postCount : 916555  
+    }
+    ,
+    {
+
+        title : "Gaming · Turkey",
+        topic : {
+            type : 'tag',
+            value : 'Hi-Fi Rush',
+        },
+        postCount : 916555  
+    }
+]
+
+export const MoreMenu = [
     {
         mainmenu : "Creator Studio",
         submenu : [
