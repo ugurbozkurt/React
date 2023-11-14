@@ -21,7 +21,7 @@ export default function Search() {
     }
 
     return (
-        <div ref={ref} className="sticky bg-black top-0 z-20">
+        <div ref={ref} className="sticky bg-black top-0 z-20 ">
             <div className="items-center flex rounded-full mb-3 mt-[5px] max-w[350px] bg-[#202327] text-[#71767b] relative group focus-within:inner-border inner-border-[#1d9bf0] focus-within:bg-[#000] ">
                 <svg
                     viewBox="0 0 24 24" 

@@ -248,12 +248,32 @@ export const TrendTopicsList = [
     ,
     {
 
-        title : "Gaming · Turkey",
+        title : "Politics · Trending",
         topic : {
             type : 'tag',
-            value : 'Hi-Fi Rush',
+            value : 'ErdoğanAffı BeyazSayfa',
         },
-        postCount : 916555  
+        postCount : 154433
+    }
+    ,
+    {
+
+        title : "Trending in Turkey",
+        topic : {
+            type : 'tag',
+            value : 'dilanpolat',
+        },
+        postCount : 122222
+    }
+    ,
+    {
+
+        title : "Politics · Trending",
+        topic : {
+            type : 'tag',
+            value : 'Fascist',
+        },
+        postCount : 1533
     }
     ,
     {
@@ -265,56 +285,8 @@ export const TrendTopicsList = [
         },
         postCount : 916555  
     }
-    ,
-    {
+    
 
-        title : "Gaming · Turkey",
-        topic : {
-            type : 'tag',
-            value : 'Hi-Fi Rush',
-        },
-        postCount : 916555  
-    }
-    ,
-    {
-
-        title : "Gaming · Turkey",
-        topic : {
-            type : 'tag',
-            value : 'Hi-Fi Rush',
-        },
-        postCount : 916555  
-    }
-    ,
-    {
-
-        title : "Gaming · Turkey",
-        topic : {
-            type : 'tag',
-            value : 'Hi-Fi Rush',
-        },
-        postCount : 916555  
-    }
-    ,
-    {
-
-        title : "Gaming · Turkey",
-        topic : {
-            type : 'tag',
-            value : 'Hi-Fi Rush',
-        },
-        postCount : 916555  
-    }
-    ,
-    {
-
-        title : "Gaming · Turkey",
-        topic : {
-            type : 'tag',
-            value : 'Hi-Fi Rush',
-        },
-        postCount : 916555  
-    }
 ]
 
 export const MoreMenu = [

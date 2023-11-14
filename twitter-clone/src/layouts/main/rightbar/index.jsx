@@ -7,7 +7,7 @@ export default function Rightbar(){
         <aside className="w-[350px] min-h-screen ml-[30px] float-right">
            <Search></Search>
            <Subscribe></Subscribe>
-           <TrendTopics></TrendTopics>
+           <TrendTopics ></TrendTopics>
         </aside>
     )
 }
