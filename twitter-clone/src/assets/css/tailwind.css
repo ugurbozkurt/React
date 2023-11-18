@@ -9,11 +9,12 @@ html{
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    -webkit-font-smoothing: antialiased;
 
 }
 
 body{
-    @apply bg-black text-white text-[15px] tracking-normal antialiased;
+    @apply bg-black text-white text-[15px] tracking-normal;
 
 } 
 

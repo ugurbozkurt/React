@@ -1,7 +1,4 @@
-import {useState} from "react";
-import { TrendTopicsList } from "../../../../../utils/const";
-
-export default function More({close,veri,handleRemoveTrend}){
+export default function More({close,index,handleRemoveTrend}){
     
 
         return (
@@ -11,7 +8,7 @@ export default function More({close,veri,handleRemoveTrend}){
                 type="button"
                 onClick={(e) => {
                     e.preventDefault();
-                    handleRemoveTrend(veri)
+                    handleRemoveTrend(index)
                     close();
                 }}
                 
@@ -25,7 +22,7 @@ export default function More({close,veri,handleRemoveTrend}){
                 type="button"
                 onClick={(e) => {
                     e.preventDefault()
-                    handleRemoveTrend(veri)
+                    handleRemoveTrend(index)
                     close()
                 }}
                 className="w-full h-11 flex flex-row items-center px-3 hover:bg-white/[0.03]">

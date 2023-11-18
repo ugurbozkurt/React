@@ -17,11 +17,9 @@ export default function TrendTopics() {
 
         setTrendTopics(updatedTopics);
     };
-    
-    return (
-        
-        <section className="w-[350px] min-h-auto bg-[#16181c] rounded-2xl flex flex-col  py-3 mt-4 ">
 
+    return (
+        <section className="w-[350px] min-h-auto bg-[#16181c] rounded-2xl flex flex-col  py-3 mt-4 ">
             <h6 className="text-[20px] font-bold text-[#E7EAE9] px-4 mb-2">Trends for you</h6>
             {trendTopics.map((item, index) =>
                 <Link to="/" key={index} className="h-[82px] w-full flex items-center hover:bg-white/[0.03] transition-colors">
@@ -31,7 +29,7 @@ export default function TrendTopics() {
                         <span className="text-[#71767b] text-[13px]">{numberFormat(item.postCount)} posts</span>
                     </div>
                     <Popover className="relative">
-                        <Popover.Button 
+                        <Popover.Button
                             type="button"
                             className="w-[40px] h-[34.75px] mr-2.5 -mt-7 text-[#71767b] transition-colors rounded-full flex items-center justify-center hover:bg-[#1d9bf01a] hover:text-[#1d9bf0]">
                             <svg viewBox="0 0 24 24" width={18.75} height={18.75}>
@@ -46,17 +44,19 @@ export default function TrendTopics() {
                             leaveFrom="transform opacity-100"
                             leaveTo="transform opacity-0"
                         >
-                           
+
                             <Popover.Panel className="absolute right-4 -top-7 z-[10]">
-                            {({close})=>(
-                                    <More close={close} veri={index} handleRemoveTrend={handleRemoveTrend} />
-                              )}
+                                {({ close }) => (
+                                    <More close={close} index={index} handleRemoveTrend={handleRemoveTrend} />
+                                )}
                             </Popover.Panel>
-                    
+
                         </Transition>
                     </Popover>
                 </Link>
             )}
+            <Link className="text-[15px] h-[52px] transition-colors flex items-center text-[#1D9BF0] px-4 hover:bg-white/[0.03]">Show more
+            </Link>
         </section>
     )
 }
