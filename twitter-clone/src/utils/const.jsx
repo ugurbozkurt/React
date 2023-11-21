@@ -225,66 +225,6 @@ export const TrendTopicsList = [
         },
         postCount : 122222
     }
-    ,
-    {
-
-        title : "Politics · Trending",
-        topic : {
-            type : 'tag',
-            value : 'Fascist',
-        },
-        postCount : 1533
-    }
-    ,
-    {
-
-        title : "Gaming · Turkey",
-        topic : {
-            type : 'tag',
-            value : 'Hi-Fi Rush',
-        },
-        postCount : 916555  
-    }
-    ,
-    {
-
-        title : "Politics · Trending",
-        topic : {
-            type : 'tag',
-            value : 'ErdoğanAffı BeyazSayfa',
-        },
-        postCount : 154433
-    }
-    ,
-    {
-
-        title : "Trending in Turkey",
-        topic : {
-            type : 'tag',
-            value : 'dilanpolat',
-        },
-        postCount : 122222
-    }
-    ,
-    {
-
-        title : "Politics · Trending",
-        topic : {
-            type : 'tag',
-            value : 'Fascist',
-        },
-        postCount : 1533
-    }
-    ,
-    {
-
-        title : "Gaming · Turkey",
-        topic : {
-            type : 'tag',
-            value : 'Hi-Fi Rush',
-        },
-        postCount : 916555  
-    }
     
 
 ]

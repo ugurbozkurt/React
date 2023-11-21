@@ -1,7 +1,10 @@
-export default function Home(){
-return (
-    <div>
-         Home component
-    </div>
+import ForYouFollowing from "../../layouts/main/centerbar/headbar"
+export default function Home() {
+    return (
+
+        <div>
+            <ForYouFollowing ></ForYouFollowing>
+            Home component
+        </div>
     )
 }

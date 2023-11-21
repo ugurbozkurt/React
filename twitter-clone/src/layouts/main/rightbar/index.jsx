@@ -2,7 +2,7 @@ import Search from "./search";
 import Subscribe from "./subscribe/index,";
 import TrendTopics from "./trendtopics";
 import WhoFollow from "./who-follow";
-
+import Footer from "./footer";
 
 export default function Rightbar() {
     return (
@@ -11,6 +11,7 @@ export default function Rightbar() {
             <Subscribe></Subscribe>
             <TrendTopics ></TrendTopics>
             <WhoFollow></WhoFollow>
+            <Footer></Footer>
         </aside>
     )
 }
