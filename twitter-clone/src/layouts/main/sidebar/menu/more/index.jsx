@@ -1,9 +1,8 @@
 
 import {Popover,Disclosure} from '@headlessui/react';
-import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { MoreMenu } from '../../../../../utils/const';
-
+import {setModal} from '../../../../../store/modal/actions'
 export default function More(){
     return (
             <Popover className="relative">
@@ -46,12 +45,12 @@ export default function More(){
                             <Disclosure.Panel className="relative" >
                                 {
                                     item.submenu.map((item,index)=>
-                                    <Link to="/" key={index} className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#EFF3F41A]">
+                                    <button onClick={item.func && (()=> setModal('appearance'))} type="button"  key={index} className="w-full flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#EFF3F41A]">
                                             <svg viewBox="0 0 24 24" width={18.75} height={18.75}>
                                                 {item.icon}
                                             </svg>
                                             {item.title}
-                                    </Link>
+                                    </button>
                                     )
                                 }
                             </Disclosure.Panel>
