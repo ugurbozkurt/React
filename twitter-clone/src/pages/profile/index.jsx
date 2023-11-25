@@ -4,7 +4,7 @@ export default function Profile(){
     const {slug} = useParams()
     
     return(
-        <div>
+        <div >
             Profile component - {slug}
         </div>
     )

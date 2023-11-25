@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 export default function Button({ as, children, variant, className, size, ...props }) {
     return createElement(as, {
         tpye: 'button',
-        className: classNames(" cursor-default rounded-full flex items-center justify-center transition-colors font-bold ", {
+        className: classNames(" cursor-pointer rounded-full flex items-center justify-center transition-colors font-bold ", {
             "px-4 h-9": size === 'normal',
             "px-4 text-[17px] h-[52px] w-full": size === 'large',
             "px-4 text-[14px] h-[32px] w-full": size === 'small',

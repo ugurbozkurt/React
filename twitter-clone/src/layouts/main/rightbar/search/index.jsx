@@ -14,6 +14,7 @@ export default function Search() {
     })
 
     const inputRef = useRef()
+    
     const handleButtonClick = () => {
         setIsInputFocused(true)
         setQuery('')

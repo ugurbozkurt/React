@@ -2,8 +2,12 @@ import AppearanceModal from "../modals/appearance"
 
 const modals = [
     {
-        name : 'appearance',
-        element : AppearanceModal
+        name: 'appearance',
+        element: AppearanceModal
+    },
+    {
+        name: 'profile-edit',
+        element: false
     }
 ]
 
