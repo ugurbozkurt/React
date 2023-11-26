@@ -1,13 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  backgroundColor:{
-    name : 'default',
-    color : '#FFF'
+  backgroundColor:{ 
+    name: 'default', 
+    color: '#FFF',
+    hvColor : '#e7e7e8', 
+    fontColor: '#0f1419',
+    sectionColor:'#f7f9f9' 
   },
   colors:{
     primary :'#1d9bf0',
-
   },
  
   colorsArray :[

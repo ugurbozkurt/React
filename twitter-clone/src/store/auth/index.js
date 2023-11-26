@@ -6,7 +6,8 @@ const initialState = {
 		username: 'ugurbozkurt_gg',
 		fullName: 'Uğur',
 		avatar: 'https://pbs.twimg.com/profile_images/1703048675239337984/6ay2racU_normal.jpg',
-		isLocked: true	
+		isLocked: true,
+		notification : 3		
 	},
 	accounts :[
 		{
@@ -15,7 +16,7 @@ const initialState = {
 			fullName: 'Uğur',
 			avatar: 'https://pbs.twimg.com/profile_images/1703048675239337984/6ay2racU_normal.jpg',
 			isLocked: true,
-			notification : 0	
+			notification : 3	
 		},
 		{
 			id: 2,

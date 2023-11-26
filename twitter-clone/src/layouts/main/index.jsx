@@ -11,12 +11,15 @@ export default function MainLayout() {
     const appearance = useAppearance()
     useEffect(() => {
         document.documentElement.style.setProperty('--background-primary', appearance.backgroundColor.color)
+        document.documentElement.style.setProperty('--font-color-primary', appearance.backgroundColor.fontColor)
+        document.documentElement.style.setProperty('--section-color-primary', appearance.backgroundColor.sectionColor)
+        document.documentElement.style.setProperty('--hv-color-primary',appearance.backgroundColor.hvColor)
 
         document.documentElement.style.setProperty('--color-primary', appearance.colors.primary)
-        document.documentElement.style.setProperty('--color-secondary', appearance.colors.secondary)
+
 
         document.documentElement.style.setProperty('--font-size', appearance.fontSize + 'px')
-  
+     
 
     }, [appearance])
 

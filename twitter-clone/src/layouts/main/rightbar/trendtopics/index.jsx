@@ -23,7 +23,7 @@ export default function TrendTopics() {
                 <Link to="/" key={index} className="h-[82px] w-full flex items-center hover:bg-white/[0.03] transition-colors">
                     <div className="w-full px-4 text-left  ">
                         <h1 className="text-[#71767b] text-[13px]">{item.title}</h1>
-                        <h1 className="text-[15px] font-extrabold">#{item.topic.value}</h1>
+                        <h1 className="text-[15px] text-[color:var(--font-color-primary)] font-extrabold">#{item.topic.value}</h1>
                         <span className="text-[#71767b] text-[13px]">{numberFormat(item.postCount)} posts</span>
                     </div>
                     <Popover className="relative">

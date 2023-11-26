@@ -14,7 +14,7 @@ export default function Menu(){
             {MainMenu.map((item,index)=>
                         <NavLink to={typeof item.path === 'function' ? item.path() : item.path} key={index} className="py-[3px] block group">
                         {({isActive})=>(
-                            <div className={classNames("p-3 rounded-full inline-flex items-center transition-colors gap-5 text-xl group-hover:bg-[#EFF3F41A]",
+                            <div className={classNames("p-3 rounded-full inline-flex items-center transition-colors gap-5 text-xl group-hover:bg-[color:var(--hv-color-primary)]",
                             {
                                 "font-bold":isActive
                             }
@@ -22,8 +22,8 @@ export default function Menu(){
                                 <div className="w-[26.25px] h-[26.25px] relative">
                                     {item?.notification &&
                                         (
-                                            <span className="w-[18px] h-[18px] absolute -top-1.5 -right-1 text-[11px] bg-[#1d9bf0] rounded-full flex justify-center items-center ">
-                                                {item.notification}
+                                            <span className="w-[18px] h-[18px] absolute -top-1.5 -right-1 text-[11px] bg-[color:var(--color-primary)] text-white rounded-full flex justify-center items-center ">
+                                                {account.notification}
                                             </span>
                                         )
                                     }
@@ -32,7 +32,7 @@ export default function Menu(){
                                         {!isActive && item.icons.inactive }
                                     </svg>
                                 </div>
-                                 <div className="text-[color:var(--background-font-primary)] text-xl pr-4" >
+                                 <div className="text-[color:var(--font-color-primary)] text-xl pr-4" >
                                     {item.title}
                                  </div>
                             </div>
