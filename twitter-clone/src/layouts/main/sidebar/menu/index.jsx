@@ -32,7 +32,7 @@ export default function Menu(){
                                         {!isActive && item.icons.inactive }
                                     </svg>
                                 </div>
-                                 <div className="text-[#E7E9EA] text-xl pr-4" >
+                                 <div className="text-[color:var(--background-font-primary)] text-xl pr-4" >
                                     {item.title}
                                  </div>
                             </div>

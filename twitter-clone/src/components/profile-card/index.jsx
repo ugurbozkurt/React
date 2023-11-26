@@ -4,7 +4,7 @@ import Button from "../button"
 export default function ProfileCard({ user}) {
     const [following, setFollowing] = useState(false);
     return (
-        <button  className="w-full h-[65px] px-3 py-4 flex items-center hover:bg-white/[0.03] transition-colors">
+        <div className="w-full h-[65px] px-3 cursor-pointer py-4 flex items-center hover:bg-white/[0.03] transition-colors">
             <img src={user.avatar} className="w-10 h-10 rounded-full"></img>
             <div className="flex-1 flex flex-col text-left ml-3">
                 <div className="font-bold text-[15px]  text-[#e7e9ea]">{user.fullname}</div>
@@ -21,6 +21,6 @@ export default function ProfileCard({ user}) {
                     : (<Button variant="white" onClick={() => setFollowing(!following)} size="small" >Follow</Button>)}
 
             </div>
-        </button>
+        </div>
     )
 }

@@ -2,8 +2,8 @@ import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 export default function SidebarSection({ title, children, more }) {
     return (
-        <section className="w-[350px] min-h-auto bg-[#16181c] rounded-2xl flex flex-col  py-3 mt-4 ">
-            <h6 className="text-[20px] font-bold text-[#E7EAE9] px-4 mb-2">{title}</h6>
+        <section className="w-[350px] min-h-auto bg-[color:var(--background-section-primary)] rounded-2xl flex flex-col  py-3 mt-4 ">
+            <h6 className="text-[20px] font-bold text-[color:var(--background-font-primary)] px-4 mb-2">{title}</h6>
             <div className="grid">
                 {children}
             </div>
