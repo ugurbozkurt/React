@@ -6,7 +6,8 @@ const initialState = {
     color: '#FFF',
     hvColor : '#e7e7e8', 
     fontColor: '#0f1419',
-    sectionColor:'#f7f9f9' 
+    sectionColor:'#f7f9f9',
+    boxShadow :'#00000033 0px 0px 15px, #00000026 0px 0px 3px 1px'
   },
   colors:{
     primary :'#1d9bf0',

@@ -1,15 +1,11 @@
 import { Popover, Transition } from "@headlessui/react"
 import { useAccount, useAccounts } from "../../../../store/auth/hooks"
 import More from "./more"
-import classNames from "classnames"
 import { useAppearance } from "../../../../store/appearance/hooks"
 export default function Account() {
 
     const account = useAccount()
     const accounts = useAccounts()
-    const appearance = useAppearance()
-    const bgName = appearance.backgroundColor.name;
-
 
     return (
         <div className="mt-auto ">
@@ -52,11 +48,7 @@ export default function Account() {
                     leaveTo="transform opacity-0"
                 >
 
-                    <Popover.Panel className={classNames("w-[300px] bottom-[80px] left-1/2 -translate-x-1/2 py-4 mb-2 absolute bg-[color:var(--background-primary)] transition-colors rounded-2xl overflow-hidden", {
-                        "!shadow-boxWhite": bgName === "default",
-                        "!shadow-boxBlack": bgName === "lights out" || bgName === "dim"
-             
-                    })}>
+                    <Popover.Panel className="w-[300px] bottom-[80px] left-1/2 -translate-x-1/2 py-4 mb-2 absolute bg-[color:var(--background-primary)] shadow-box transition-colors rounded-2xl overflow-hidden">
                         {({ close }) => (
                             <More close={close} />
                         )}

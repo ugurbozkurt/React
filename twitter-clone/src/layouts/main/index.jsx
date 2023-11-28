@@ -14,7 +14,7 @@ export default function MainLayout() {
         document.documentElement.style.setProperty('--font-color-primary', appearance.backgroundColor.fontColor)
         document.documentElement.style.setProperty('--section-color-primary', appearance.backgroundColor.sectionColor)
         document.documentElement.style.setProperty('--hv-color-primary',appearance.backgroundColor.hvColor)
-
+        document.documentElement.style.setProperty('--shadowBox',appearance.backgroundColor.boxShadow)
         document.documentElement.style.setProperty('--color-primary', appearance.colors.primary)
 
 
@@ -27,7 +27,7 @@ export default function MainLayout() {
         <div className="w-[1265px] mx-auto flex">
             {modal && <Modal></Modal>}
             <Sidebar></Sidebar>
-            <main className="min-w-[600px] border-x float-left border-[#2f3336]">
+            <main className="min-w-[600px] border-x float-left border-[color:var(--hv-color-primary)]">
                 <Outlet></Outlet>
             </main>
             <Rightbar></Rightbar>

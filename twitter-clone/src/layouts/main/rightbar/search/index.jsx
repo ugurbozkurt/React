@@ -23,7 +23,7 @@ export default function Search() {
 
     return (
         <div ref={ref} className="sticky bg-[color:var(--background-primary)] top-0 z-10 ">
-            <div className="items-center flex rounded-full mb-3 mt-[5px] max-w[350px] bg-[color:var(--section-color-primary)] text-[#71767b] relative group focus-within:inner-border inner-border-[color:var(--color-primary)] focus-within:bg-[color:var(--section-color-primary)] ">
+            <div className="items-center h-[40px] flex rounded-full mb-3 mt-[5px] max-w[350px] bg-[color:var(--section-color-primary)] text-[#71767b] relative group focus-within:inner-border inner-border-[color:var(--color-primary)] focus-within:bg-[color:var(--section-color-primary)] ">
                 <svg
                     viewBox="0 0 24 24"
                     width={44} height={18.75}
@@ -37,11 +37,12 @@ export default function Search() {
                     ref={inputRef}
                     type="text"
                     placeholder="Search"
-                    className="w-full h-[40px] border-transparent bg-[color:var(--section-color-primary)] rounded-2xl text-[color:var(--font-color-primary)] p-[9px] outline-none placeholder:text-[color:var(--font-color-primary)]"
+                    className="w-[260px] h-[30px] border-transparent bg-[color:var(--section-color-primary)] rounded-2xl text-[color:var(--font-color-primary)] p-[9px] outline-none placeholder:text-[color:var(--font-color-primary)]"
                     value={query}
                     autoFocus={isInputFocused}
                     onFocus={() => setFocus(true)}
                     onChange={(e) => setQuery(e.target.value)}
+                    autoComplete="off"
                 />
 
                 {(query && focus) && (

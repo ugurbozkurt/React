@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html{
-    font-family: 'Twitter Chirp Regular' ,BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Twitter Chirp Regular' ,sans-serif,BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
     src: url('subset-TwitterChirp.woff2') format('woff2'),
         url('subset-TwitterChirp.woff') format('woff');
     font-weight: normal;
@@ -14,7 +14,10 @@ html{
 }
 
 body{
-    @apply bg-[color:var(--background-primary)]  text-[15px] tracking-normal;
+    @apply bg-[color:var(--background-primary)] text-[15px] antialiased  tracking-normal;
 
 } 
 
+.shadow-box {
+    box-shadow: var(--shadowBox);
+}

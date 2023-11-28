@@ -3,10 +3,9 @@ import { Popover, Disclosure } from '@headlessui/react';
 import classNames from 'classnames';
 import { MoreMenu } from '../../../../../utils/const';
 import { setModal } from '../../../../../store/modal/actions'
-import { useAppearance } from '../../../../../store/appearance/hooks';
+
 export default function More() {
-    const appearance = useAppearance()
-    const bgName = appearance.backgroundColor.name;
+
     return (
         <Popover className="relative">
             <Popover.Button className="h-14 block outline-none transition-colors rounded-full hover:bg-[color:var(--hv-color-primary)]">
@@ -21,11 +20,7 @@ export default function More() {
                     </div>
                 </div>
             </Popover.Button>
-            <Popover.Panel className={classNames("w-[318px] absolute bottom-0 left-0 bg-[color:var(--background-primary)]  rounded-xl overflow-hidden",{
-                 "!shadow-boxWhite": bgName === "default",
-                 "!shadow-boxBlack": bgName === "lights out" || bgName === "dim"
-            } 
-            )}>
+            <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-[color:var(--background-primary)] shadow-box  rounded-xl overflow-hidden">
                 <button className="px-4 h-14 w-full transition-colors inline-flex items-center gap-5 hover:bg-[color:var(--section-color-primary)]">
                     <div className="w-[26.25] h-[26.25] relative">
                         <svg viewBox="0 0 24 24" width={26.25} height={26.25}>
@@ -52,7 +47,7 @@ export default function More() {
                                 <Disclosure.Panel className="relative" >
                                     {
                                         item.submenu.map((item, index) =>
-                                            <Popover.Button onClick={item.func && (()=> setModal('appearance'))} type="button" key={index} className="w-full text-[color:var(--font-color-primary)] flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[color:var(--section-color-primary)]">
+                                            <Popover.Button onClick={item.func && (() => setModal('appearance'))} type="button" key={index} className="w-full text-[color:var(--font-color-primary)] flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[color:var(--section-color-primary)]">
                                                 <svg viewBox="0 0 24 24" width={18.75} height={18.75}>
                                                     {item.icon}
                                                 </svg>

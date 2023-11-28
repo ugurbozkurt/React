@@ -63,7 +63,7 @@ export default function AppearanceModal() {
         <p className="text-[13px] text-[#71767b] font-bold mt-4 mb-1">Background</p>
         <div className="w-full h-[80px] rounded-2xl bg-[color:var(--section-color-primary)] gap-3 flex items-center justify-center">
           <button
-            onClick={() => setBackgroundColor({ name: 'default', color: '#FFF', fontColor: '#0f1419',sectionColor:'#f7f9f9',hvColor : '#e7e7e8' })}
+            onClick={() => setBackgroundColor({ name: 'default', color: '#FFF', fontColor: '#0f1419',sectionColor:'#f7f9f9',hvColor : '#e7e7e8' , boxShadow : '#00000033 0px 0px 15px, #00000026 0px 0px 3px 1px' })}
             type="button"
             className={classNames("w-[160px] h-[60px] border border-[#333639]  rounded-[4px] items-center justify-center bg-white font-bold text-[#0f1419] ",
               {
@@ -71,14 +71,14 @@ export default function AppearanceModal() {
               }
             )}>Default</button>
           <button
-            onClick={() => setBackgroundColor({ name: 'dim', color: '#15202b', fontColor: '#f7f9f9',sectionColor : '#1e2732' , hvColor :'#2c3640' })}
+            onClick={() => setBackgroundColor({ name: 'dim', color: '#15202b', fontColor: '#f7f9f9',sectionColor : '#1e2732' , hvColor :'#2c3640',boxShadow : '#ffffff33 0px 0px 15px, #ffffff26 0px 0px 3px 1px' })}
             type="button"
             className={classNames("w-[160px] h-[60px] border border-[#333639] rounded-[4px] items-center text-white bg-[#15202b] justify-center font-bold",
               {
                 "!border-2 border-[color:var(--color-primary)]": bgName === "dim"
               })}>Dim</button>
           <button
-            onClick={() => setBackgroundColor({ name: 'lights out', color: '#000', fontColor: '#e7e9ea',sectionColor:'#16181c' , hvColor :'#181818' })}
+            onClick={() => setBackgroundColor({ name: 'lights out', color: '#000', fontColor: '#e7e9ea',sectionColor:'#16181c' , hvColor :'#181818',boxShadow : '#ffffff33 0px 0px 15px, #ffffff26 0px 0px 3px 1px' })}
             type="button"
             className={classNames("w-[160px] h-[60px] border border-[#333639] rounded-[4px] bg-[#000] text-white items-center justify-center font-bold ",
               {

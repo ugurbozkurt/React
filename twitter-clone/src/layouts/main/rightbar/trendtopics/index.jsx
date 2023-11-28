@@ -20,7 +20,7 @@ export default function TrendTopics() {
     return (
         <SidebarSection title="Trends for you" more="trends">
             {trendTopics.map((item, index) =>
-                <Link to="/" key={index} className="h-[82px] w-full flex items-center hover:bg-white/[0.03] transition-colors">
+                <Link to="/" key={index} className="h-[82px] w-full flex items-center hover:bg-[color:var(--hv-color-primary)] transition-colors">
                     <div className="w-full px-4 text-left  ">
                         <h1 className="text-[#71767b] text-[13px]">{item.title}</h1>
                         <h1 className="text-[15px] text-[color:var(--font-color-primary)] font-extrabold">#{item.topic.value}</h1>

@@ -4,7 +4,7 @@ export default function Post() {
     const account = useAccount()
     return (
 
-        <div className="h-[116px] px-4 py-4 border-b border-[#2f3336]">
+        <div className="h-[116px] px-4 py-4 border-b border-[color:var(--hv-color-primary)]">
             <img src={account.avatar} className="w-10 h-10 rounded-full"></img>
         </div>
     )
