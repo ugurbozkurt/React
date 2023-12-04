@@ -1,7 +1,6 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from "./pages/Home"
-import Detail from './pages/detail'
-import Navbar from './components/navbar'
+
 import Footer from './components/Footer'
 import PageContainers from './containers/PageContainers'
 import { useSelector } from 'react-redux'
@@ -18,7 +17,6 @@ export default function App() {
           <Search/>
           <Routes>
             <Route path="/home" element={<Home />} />
-            <Route path="/detail" element={<Detail />} />
           </Routes>
           { drawer && <Card/>}
           <Footer />
