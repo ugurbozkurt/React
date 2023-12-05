@@ -9,10 +9,9 @@ const Home = () => {
     dispatch(productsAction())
     
   },[dispatch])
-
+  console.log(products)
   return (
     <div className='flex flex-wrap justify-center'>
-
       {
         products && products.map((item,index) => (
           <Card products={item} key={index}></Card>
