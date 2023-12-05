@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from "./pages/Home"
-
+import Detail from "./pages/Detail"
 import Footer from './components//footer'
 import PageContainers from './containers/PageContainers'
 import { useSelector } from 'react-redux'
