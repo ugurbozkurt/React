@@ -4,7 +4,7 @@ import Home from "./pages/Home"
 import Footer from './components//footer'
 import PageContainers from './containers/PageContainers'
 import { useSelector } from 'react-redux'
-import Card from "./components/card/index"
+import Cart from "./components/cart/index"
 import Search from './components/search'
 export default function App() {
 
@@ -17,8 +17,9 @@ export default function App() {
           <Search/>
           <Routes>
             <Route path="/home" element={<Home />} />
+            <Route path="/detail" element={<Detail />} />
           </Routes>
-          { drawer && <Card/>}
+          { drawer && <Cart/>}
           <Footer />
         </BrowserRouter>
       </PageContainers>

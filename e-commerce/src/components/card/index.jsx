@@ -1,16 +1,13 @@
 import React from 'react'
-import { RiCloseCircleFill } from "react-icons/ri";
-import { useDispatch } from 'react-redux'
-const Card = () => {
-  const dispatch = useDispatch()
+import { SiWearos } from "react-icons/si";
+const Card = ({products}) => {
   return (
-    <div
-    className='w-1/3 h-full border p-3 fixed top-0 right-0 z-44'
-    >
-    <div className='flex items-center justify-between'>
-      <h1 className='text-2xl'>My cart :</h1>
-      <RiCloseCircleFill onClick={()=>dispatch({type:"DRAWER",payload:false})} size={25} className='cursor-pointer' />
-    </div>
+    <div  className='w-1/5 border-2 cursor-pointer p-4 rounded-lg gap-3 m-2 flex flex-col items-center text-center transition color hover:border-[#000]'>
+        <img onClick={()=> window.location=`detail/${products.id}`} src={products?.image} className='h-32 object-cover p-2'/>
+        <div className='font-bold h-16'>{(products?.title).substring(0,45)}..</div>
+        <div>{(products?.description).substring(0,45)}...</div>
+        <div className='font-bold text-lg mb-4'>{products?.price} TL</div>
+        <button type='button' className='w-[130px]  p-2 relative flex items-center justify-center border-b-2 border-black transition-colors rounded-xl text-black hover:bg-black hover:text-white '>Add to cart <SiWearos  size={20} className='ml-2' /></button>
     </div>
   )
 }
