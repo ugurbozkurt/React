@@ -17,7 +17,7 @@ export default function App() {
           <Search/>
           <Routes>
             <Route path="/home" element={<Home />} />
-            <Route path="/detail" element={<Detail />} />
+            <Route path="/detail/:id" element={<Detail />} />
           </Routes>
           { drawer && <Cart/>}
           <Footer />
