@@ -20,7 +20,7 @@ const Cart = () => {
 
   return (
     <div id="mycart"
-    className='w-1/3 h-full border p-3 fixed top-0 right-0 z-44'
+    className='w-1/3 h-full   border p-3 fixed top-0 right-0 z-44'
     >
     <div className='flex items-center justify-between'>
       <h1 className='text-2xl'>My cart :</h1>

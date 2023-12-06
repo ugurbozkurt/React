@@ -19,7 +19,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/detail/:id" element={<Detail />} />
           </Routes>
-          { drawer && <Cart/>}
+          { drawer && <Cart />}
           <Footer />
         </BrowserRouter>
       </PageContainers>
