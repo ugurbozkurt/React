@@ -8,7 +8,7 @@ const Card = ({products}) => {
 
   const addCards = ()=>{
    dispatch({type:"DRAWER",payload:true})
-   dispatch(addCard(id,count))
+   dispatch(addCard(products.id,1))
   }
   return (
     <div  className='w-1/5 border-2 cursor-pointer p-4 rounded-lg gap-3 m-2 flex flex-col items-center text-center transition color hover:border-[#000]'>
