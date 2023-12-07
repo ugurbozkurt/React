@@ -2,12 +2,13 @@ import { React, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { productActionDetail } from '../redux/actions/products'
+import { addCard } from '../redux/actions/card' 
 import { CgMathPlus, CgMathMinus } from "react-icons/cg";
+
 const Detail = () => {
   const { id } = useParams()
   const [count, setCount] = useState(1)
-  const dispatch = useDispatch()
-  const { product } = useSelector(state => state.product)
+
   useEffect(() => {
     dispatch(productActionDetail(id))
 
@@ -22,6 +23,12 @@ const Detail = () => {
     if (count > 1) {
       setCount(count - 1)
     }
+  }
+  const dispatch = useDispatch()
+  const { product } = useSelector(state => state.product)
+  const addCards = ()=>{
+   dispatch({type:"DRAWER",payload:true})
+   dispatch(addCard(id,count))
   }
   return (
     <div className='w-4/5 cursor-pointer p-4 space-x-5 rounded-lg gap-3 m-2 flex text-left transition color hover:border-[#000]'>
@@ -39,10 +46,11 @@ const Detail = () => {
           <CgMathPlus onClick={() => increment()} size={25} className='border-2 cursor-pointer border-[#000] rounded-full hover:text-[#FFF] hover:bg-black transition-colors ' />
         </div>
         <button
-        onClick={()=>dispatch({type:"DRAWER",payload:true})} 
+        onClick={addCards} 
         className='w-full  hover:duration-150 bg-black text-[#fff] border border-[#000] rounded-lg text-center p-3 hover:bg-white hover:text-black hover:border hover:border-[#000]  '>Add to cart</button>
       </div>
 
+      
     </div>
   )
 }

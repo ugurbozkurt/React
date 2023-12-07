@@ -3,6 +3,14 @@
 @import 'tailwindcss/utilities';
 
 
-#root{
-    min-height: 100vh;
+#mycart {
+  transition: transform 0.5s ease;
+}
+
+#mycart.closing {
+  transform: translateX(100%);
+}
+
+#root {
+  min-height: 100vh;
 }

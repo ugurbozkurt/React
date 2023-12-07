@@ -5,9 +5,14 @@ import { useState,useEffect } from "react"
 import { useDispatch } from 'react-redux'
 import Navbar from '../navbar'
 import { SiWearos } from "react-icons/si";
+import {useSelector} from "react-redux"
 const Search = () => {
     const [color, setColor] = useState(false)
     const dispatch = useDispatch()
+ 
+
+    const { cardItems } = useSelector(state => state.card)
+
     useEffect(()=>{
         const root= document.getElementById('root')
         const search= document.getElementById('search')
@@ -37,10 +42,11 @@ const Search = () => {
 
                 </div>
                 <div 
+                
                 onClick={()=>dispatch({type:"DRAWER",payload:true})}
                 className='relative'>
                     <BsBasketFill size={25} className='cursor-pointer' />
-                    <span className='absolute cursor-pointer -top-2 -right-3 bg-red-300 px-2 text-black rounded-full text-small hover:bg-red-400 transition-colors'>3</span>
+                    <span className='absolute cursor-pointer -top-2 -right-3 bg-red-300 px-2 text-black rounded-full text-small hover:bg-red-400 transition-colors'>{cardItems?.length}</span>
                 </div>
             </div>
         </div>
