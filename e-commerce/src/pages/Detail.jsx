@@ -8,7 +8,8 @@ import { CgMathPlus, CgMathMinus } from "react-icons/cg";
 const Detail = () => {
   const { id } = useParams()
   const [count, setCount] = useState(1)
-
+  const dispatch = useDispatch()
+  const { product } = useSelector(state => state.product)
   useEffect(() => {
     dispatch(productActionDetail(id))
 
@@ -24,8 +25,7 @@ const Detail = () => {
       setCount(count - 1)
     }
   }
-  const dispatch = useDispatch()
-  const { product } = useSelector(state => state.product)
+
   const addCards = ()=>{
    dispatch({type:"DRAWER",payload:true})
    dispatch(addCard(id,count))
