@@ -18,7 +18,7 @@ const Card = ({products}) => {
         <div className='font-bold h-16'>{(products?.title).substring(0,45)}..</div>
         <div>{(products?.description).substring(0,45)}...</div>
         <div className='font-bold text-lg mb-4'>{products?.price} TL</div>
-        <button onClick={addCards} type='button' className='w-[130px] bg-black text-[#FFF]  p-2 relative flex items-center justify-center  border-black transition-colors rounded-xl text-black hover:border-b-2 hover:bg-white hover:text-black '>Add to cart <SiWearos  size={20} className='ml-2' /></button>
+        <button onClick={addCards} type='button' className='w-[130px] bg-black text-[#FFF]  p-2 relative flex items-center justify-center border-b-2   border-black transition-colors rounded-xl text-black hover:border-b-2 hover:bg-white hover:text-black '>Add to cart <SiWearos  size={20} className='ml-2' /></button>
     </div>
   )
 }
